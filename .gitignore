@@ -1,0 +1,4 @@
+node_modules/
+.wechat/
+project.private.config.json
+.env

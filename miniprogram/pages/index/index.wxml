@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="time-section">
+    <text class="time-period">{{timePeriod}}</text>
+    <text class="time-clock">{{timeClock}}</text>
+  </view>
+
+  <view class="mood-section">
+    <text class="mood-text">{{moodText}}</text>
+  </view>
+
+  <view class="presence-section">
+    <view class="presence-dot"></view>
+    <text class="presence-label">{{presenceText}}</text>
+  </view>
+
+  <view class="action-section">
+    <button class="enter-btn" hover-class="enter-btn-hover" bindtap="onEnterNight">
+      进入夜晚
+    </button>
+  </view>
+</view>

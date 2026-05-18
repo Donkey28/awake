@@ -1,0 +1,116 @@
+.page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 200rpx 64rpx 0;
+  box-sizing: border-box;
+  background-color: #F5F3F0;
+  overflow: hidden;
+}
+
+/* ====== 时间 ====== */
+
+.time-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.time-period {
+  font-size: 26rpx;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.35);
+  letter-spacing: 4rpx;
+}
+
+.time-clock {
+  font-size: 80rpx;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.55);
+  margin-top: 12rpx;
+  letter-spacing: 2rpx;
+}
+
+/* ====== 文案 ====== */
+
+.mood-section {
+  margin-top: 140rpx;
+}
+
+.mood-text {
+  font-size: 34rpx;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 1.8;
+  letter-spacing: 1rpx;
+  max-width: 480rpx;
+}
+
+/* ====== 在线人数 ====== */
+
+.presence-section {
+  display: flex;
+  align-items: center;
+  margin-top: 180rpx;
+}
+
+.presence-dot {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background-color: #6B5E52;
+  margin-right: 16rpx;
+  animation: dotBreath 2.4s ease-in-out infinite;
+}
+
+@keyframes dotBreath {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+.presence-label {
+  font-size: 22rpx;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.30);
+  letter-spacing: 2rpx;
+}
+
+/* ====== 按钮 ====== */
+
+.action-section {
+  margin-top: auto;
+  padding-bottom: 120rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.enter-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24rpx 72rpx;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  color: rgba(0, 0, 0, 0.50);
+  font-size: 28rpx;
+  font-weight: 300;
+  letter-spacing: 4rpx;
+  line-height: 1;
+  border-radius: 4rpx;
+  box-sizing: border-box;
+}
+
+.enter-btn::after {
+  border: 1rpx solid rgba(0, 0, 0, 0.12);
+  border-radius: 4rpx;
+}
+
+.enter-btn-hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.enter-btn-hover::after {
+  border-color: rgba(0, 0, 0, 0.25);
+}
